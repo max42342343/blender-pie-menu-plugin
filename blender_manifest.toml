@@ -1,6 +1,6 @@
 schema_version = "1.0.0"
 id = "mode_selector"
-version = "0.1.1"
+version = "0.1.2"
 name = "mode selector"
 tagline = "mode selector"
 maintainer = "max"

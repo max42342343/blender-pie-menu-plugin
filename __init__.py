@@ -16,7 +16,7 @@ bl_info = {
     "author" : "max", 
     "description" : "",
     "blender" : (4, 2, 0),
-    "version" : (0, 1, 1),
+    "version" : (0, 1, 2),
     "location" : "",
     "warning" : "",
     "doc_url": "", 
@@ -123,9 +123,9 @@ class SNA_MT_88FD1(bpy.types.Menu):
 
     def draw(self, context):
         layout = self.layout.menu_pie()
-        op = layout.operator('sna.vertex_mode__68ea5', text='Vertex Mode ', icon_value=593, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[0] and 'EDIT_MESH'==bpy.context.mode))
-        op = layout.operator('sna.face_mode__455f3', text='Face Mode ', icon_value=571, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[2] and 'EDIT_MESH'==bpy.context.mode))
-        op = layout.operator('sna.edge_mode_d3c76', text='Edge Mode', icon_value=565, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[1] and 'EDIT_MESH'==bpy.context.mode))
+        op = layout.operator('sna.vertex_mode__68ea5', text='Vertex Mode ', icon_value=594, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[0] and 'EDIT_MESH'==bpy.context.mode))
+        op = layout.operator('sna.face_mode__455f3', text='Face Mode ', icon_value=573, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[2] and 'EDIT_MESH'==bpy.context.mode))
+        op = layout.operator('sna.edge_mode_d3c76', text='Edge Mode', icon_value=567, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[1] and 'EDIT_MESH'==bpy.context.mode))
         if 'OBJECT'==bpy.context.mode:
             op = layout.operator('sna.object_mode_toggle_67804', text='Edit Mode', icon_value=163, emboss=True, depress=False)
         else:
@@ -140,11 +140,11 @@ class SNA_MT_88FD1(bpy.types.Menu):
         row_02B5E.scale_y = 1.25
         row_02B5E.alignment = 'Expand'.upper()
         row_02B5E.operator_context = "INVOKE_DEFAULT" if True else "EXEC_DEFAULT"
-        op = row_02B5E.operator('sna.xray_toggle_db11b', text='', icon_value=647, emboss=True, depress=False)
-        op = row_02B5E.operator('sna.wireframe_mode_b8161', text='', icon_value=646, emboss=True, depress=False)
-        op = row_02B5E.operator('sna.solid_mode_ef505', text='', icon_value=644, emboss=True, depress=False)
+        op = row_02B5E.operator('sna.xray_toggle_db11b', text='', icon_value=649, emboss=True, depress=False)
+        op = row_02B5E.operator('sna.wireframe_mode_b8161', text='', icon_value=648, emboss=True, depress=False)
+        op = row_02B5E.operator('sna.solid_mode_ef505', text='', icon_value=646, emboss=True, depress=False)
         op = row_02B5E.operator('sna.material_mode_32ff0', text='', icon_value=205, emboss=True, depress=False)
-        op = row_02B5E.operator('sna.render_mode_a1e1d', text='', icon_value=643, emboss=True, depress=False)
+        op = row_02B5E.operator('sna.render_mode_a1e1d', text='', icon_value=645, emboss=True, depress=False)
 
 
 class SNA_OT_Object_Mode_Toggle_67804(bpy.types.Operator):
@@ -378,9 +378,9 @@ class SNA_MT_CFB9F(bpy.types.Menu):
 
     def draw(self, context):
         layout = self.layout.menu_pie()
-        op = layout.operator('sna.vertex_mode__68ea5', text='Vertex Mode ', icon_value=593, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[0] and 'EDIT_MESH'==bpy.context.mode))
-        op = layout.operator('sna.face_mode__455f3', text='Face Mode ', icon_value=571, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[2] and 'EDIT_MESH'==bpy.context.mode))
-        op = layout.operator('sna.edge_mode_d3c76', text='Edge Mode', icon_value=565, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[1] and 'EDIT_MESH'==bpy.context.mode))
+        op = layout.operator('sna.vertex_mode__68ea5', text='Vertex Mode ', icon_value=595, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[0] and 'EDIT_MESH'==bpy.context.mode))
+        op = layout.operator('sna.face_mode__455f3', text='Face Mode ', icon_value=573, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[2] and 'EDIT_MESH'==bpy.context.mode))
+        op = layout.operator('sna.edge_mode_d3c76', text='Edge Mode', icon_value=567, emboss=True, depress=(bpy.context.tool_settings.mesh_select_mode[1] and 'EDIT_MESH'==bpy.context.mode))
         if 'OBJECT'==bpy.context.mode:
             op = layout.operator('sna.object_mode_toggle_67804', text='Edit Mode', icon_value=163, emboss=True, depress=False)
         else:
@@ -395,7 +395,7 @@ class SNA_MT_CFB9F(bpy.types.Menu):
         row_B441A.scale_y = 1.25
         row_B441A.alignment = 'Expand'.upper()
         row_B441A.operator_context = "INVOKE_DEFAULT" if True else "EXEC_DEFAULT"
-        op = row_B441A.operator('sna.toggle_uv_sync_select_3e15b', text='', icon_value=631, emboss=True, depress=False)
+        op = row_B441A.operator('sna.toggle_uv_sync_select_3e15b', text='', icon_value=633, emboss=True, depress=False)
 
 
 class SNA_OT_Object_Mode_Toggle002_D97B8(bpy.types.Operator):
